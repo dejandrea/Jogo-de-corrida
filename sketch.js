@@ -3,7 +3,9 @@ var backgroundImage;
 var bgImg;
 var database;
 var form, player,game;
-var playerCount;
+var playerCount = 0;
+var gameState = 0;
+
 
 function preload() {
   backgroundImage = loadImage("./assets/planodefundo.png");
@@ -11,14 +13,17 @@ function preload() {
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
-  //database = firebase.database();
+  database = firebase.database();
   game = new Game();
+  game.getState();
   game.start();
 
 }
 
 function draw() {
   background(backgroundImage);
+
+  
 }
 
 function windowResized() {

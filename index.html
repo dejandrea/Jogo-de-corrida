@@ -24,8 +24,28 @@
     <script src="./js/Form.js"></script>
     <script src="./js/Player.js"></script>
 
-    <!-- ADICIONAR CÓDIGO Firebase SDK ABAIXO -->
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+      <!-- ADICIONAR CÓDIGO Firebase SDK ABAIXO -->
+    <script>
 
+//banco prof
+   
+    const firebaseConfig = {
+      apiKey: "AIzaSyBibh8Q9yh0Vk24aNFlMfzwrwQUO3KvXQs",
+      authDomain: "jogo-de-corrida-eduardo.firebaseapp.com",
+      databaseURL: "https://jogo-de-corrida-eduardo-default-rtdb.firebaseio.com",
+      projectId: "jogo-de-corrida-eduardo",
+      storageBucket: "jogo-de-corrida-eduardo.appspot.com",
+      messagingSenderId: "552368865239",
+      appId: "1:552368865239:web:a4409bf8e970b6ed8c9592"
+    };
+ // Initialize Firebase
+
+ //banco Eduardo
+      firebase.initializeApp(firebaseConfig);
+    </script>
    
   </head>
   <body>
